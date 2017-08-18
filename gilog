@@ -1,0 +1,163 @@
+[33mcommit 49d06baf74e1c02c34ca5df54fdc2f525da20927[m
+Author: Francisco Villarreal <paco_vip95@hotmail.com>
+Date:   Sun Aug 13 18:50:25 2017 -0500
+
+    prueba
+
+[1mdiff --git a/principal.py b/principal.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5159e9b[m
+[1m--- /dev/null[m
+[1m+++ b/principal.py[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mprint 'hola perrros'[m
+\ No newline at end of file[m
+
+[33mcommit 2ddbc0996e1266c5529de9d63085749dbef5e9db[m
+Author: paco9595 <paco_vip95@hotmail.com>
+Date:   Sun Aug 13 18:47:29 2017 -0500
+
+    Initial commit
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7bbc71c[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,101 @@[m
+[32m+[m[32m# Byte-compiled / optimized / DLL files[m
+[32m+[m[32m__pycache__/[m
+[32m+[m[32m*.py[cod][m
+[32m+[m[32m*$py.class[m
+[32m+[m
+[32m+[m[32m# C extensions[m
+[32m+[m[32m*.so[m
+[32m+[m
+[32m+[m[32m# Distribution / packaging[m
+[32m+[m[32m.Python[m
+[32m+[m[32menv/[m
+[32m+[m[32mbuild/[m
+[32m+[m[32mdevelop-eggs/[m
+[32m+[m[32mdist/[m
+[32m+[m[32mdownloads/[m
+[32m+[m[32meggs/[m
+[32m+[m[32m.eggs/[m
+[32m+[m[32mlib/[m
+[32m+[m[32mlib64/[m
+[32m+[m[32mparts/[m
+[32m+[m[32msdist/[m
+[32m+[m[32mvar/[m
+[32m+[m[32mwheels/[m
+[32m+[m[32m*.egg-info/[m
+[32m+[m[32m.installed.cfg[m
+[32m+[m[32m*.egg[m
+[32m+[m
+[32m+[m[32m# PyInstaller[m
+[32m+[m[32m#  Usually these files are written by a python script from a template[m
+[32m+[m[32m#  before PyInstaller builds the exe, so as to inject date/other infos into it.[m
+[32m+[m[32m*.manifest[m
+[32m+[m[32m*.spec[m
+[32m+[m
+[32m+[m[32m# Installer logs[m
+[32m+[m[32mpip-log.txt[m
+[32m+[m[32mpip-delete-this-directory.txt[m
+[32m+[m
+[32m+[m[32m# Unit test / coverage reports[m
+[32m+[m[32mhtmlcov/[m
+[32m+[m[32m.tox/[m
+[32m+[m[32m.coverage[m
+[32m+[m[32m.coverage.*[m
+[32m+[m[32m.cache[m
+[32m+[m[32mnosetests.xml[m
+[32m+[m[32mcoverage.xml[m
+[32m+[m[32m*.cover[m
+[32m+[m[32m.hypothesis/[m
+[32m+[m
+[32m+[m[32m# Translations[m
+[32m+[m[32m*.mo[m
+[32m+[m[32m*.pot[m
+[32m+[m
+[32m+[m[32m# Django stuff:[m
+[32m+[m[32m*.log[m
+[32m+[m[32mlocal_settings.py[m
+[32m+[m
+[32m+[m[32m# Flask stuff:[m
+[32m+[m[32minstance/[m
+[32m+[m[32m.webassets-cache[m
+[32m+[m
+[32m+[m[32m# Scrapy stuff:[m
+[32m+[m[32m.scrapy[m
+[32m+[m
+[32m+[m[32m# Sphinx documentation[m
+[32m+[m[32mdocs/_build/[m
+[32m+[m
+[32m+[m[32m# PyBuilder[m
+[32m+[m[32mtarget/[m
+[32m+[m
+[32m+[m[32m# Jupyter Notebook[m
+[32m+[m[32m.ipynb_checkpoints[m
+[32m+[m
+[32m+[m[32m# pyenv[m
+[32m+[m[32m.python-version[m
+[32m+[m
+[32m+[m[32m# celery beat schedule file[m
+[32m+[m[32mcelerybeat-schedule[m
+[32m+[m
+[32m+[m[32m# SageMath parsed files[m
+[32m+[m[32m*.sage.py[m
+[32m+[m
+[32m+[m[32m# dotenv[m
+[32m+[m[32m.env[m
+[32m+[m
+[32m+[m[32m# virtualenv[m
+[32m+[m[32m.venv[m
+[32m+[m[32mvenv/[m
+[32m+[m[32mENV/[m
+[32m+[m
+[32m+[m[32m# Spyder project settings[m
+[32m+[m[32m.spyderproject[m
+[32m+[m[32m.spyproject[m
+[32m+[m
+[32m+[m[32m# Rope project settings[m
+[32m+[m[32m.ropeproject[m
+[32m+[m
+[32m+[m[32m# mkdocs documentation[m
+[32m+[m[32m/site[m
+[32m+[m
+[32m+[m[32m# mypy[m
+[32m+[m[32m.mypy_cache/[m
+[1mdiff --git a/LICENSE b/LICENSE[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ea08f24[m
+[1m--- /dev/null[m
+[1m+++ b/LICENSE[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32mMIT License[m
+[32m+[m
+[32m+[m[32mCopyright (c) 2017 paco9595[m
+[32m+[m
+[32m+[m[32mPermission is hereby granted, free of charge, to any person obtaining a copy[m
+[32m+[m[32mof this software and associated documentation files (the "Software"), to deal[m
+[32m+[m[32min the Software without restriction, including without limitation the rights[m
+[32m+[m[32mto use, copy, modify, merge, publish, distribute, sublicense, and/or sell[m
+[32m+[m[32mcopies of the Software, and to permit persons to whom the Software is[m
+[32m+[m[32mfurnished to do so, subject to the following conditions:[m
+[32m+[m
+[32m+[m[32mThe above copyright notice and this permission notice shall be included in all[m
+[32m+[m[32mcopies or substantial portions of the Software.[m
+[32m+[m
+[32m+[m[32mTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR[m
+[32m+[m[32mIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,[m
+[32m+[m[32mFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE[m
+[32m+[m[32mAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER[m
+[32m+[m[32mLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,[m
+[32m+[m[32mOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE[m
+[32m+[m[32mSOFTWARE.[m
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..aa2b812[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m# proyecto-TSO[m
+\ No newline at end of file[m
